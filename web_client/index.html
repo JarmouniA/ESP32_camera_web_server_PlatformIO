@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
     <head>
+        <script type="text/javascript" src="client.js"></script>
         <script>
             src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
             
             function Connect()
             {
-                const Url = 'http://192.168.8.103';
+                const Url = esp32_Url;
                 fetch(`${Url}/status`)
                 .then(function (response) {
                 return response.json()

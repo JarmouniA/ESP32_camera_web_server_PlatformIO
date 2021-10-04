@@ -709,11 +709,10 @@
                 </figure>
             </div>
         </section>
-
+    <script type="text/javascript" src="client.js"></script>
     <script>
-      const Url = 'http://192.168.8.103';
       document.addEventListener('DOMContentLoaded', function (event) {
-      var baseHost = Url
+      var baseHost = esp32_Url
       var streamUrl = baseHost + ':81'
 
       function fetchUrl(url, cb){

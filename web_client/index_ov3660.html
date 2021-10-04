@@ -905,9 +905,10 @@
                 </figure>
             </div>
         </section>
+        <script type="text/javascript" src="client.js"></script>
         <script>
 document.addEventListener('DOMContentLoaded', function (event) {
-  var baseHost = document.location.origin
+  var baseHost = esp32_Url
   var streamUrl = baseHost + ':81'
 
   function fetchUrl(url, cb){

@@ -251,10 +251,13 @@ select.form-control {
 }
 
 </style>
+<script type="text/javascript" src="client.js"></script>
+
 <script type="text/javascript">
 /*
 *  Console
 */
+
 function isArray(a){
   return (typeof a === "object" && a instanceof Array);
 }
@@ -865,8 +868,8 @@ function initCameraPlayerControls(){
 /*
 *  MDNS
 */
-//const baseHost = 'http://192.168.254.81';
-const baseHost = document.location.origin;
+const baseHost = esp32_Url;
+//const baseHost = document.location.origin;
 
 function scanMdns(){
   fetchUrl(baseHost+'/mdns', "json", function(code, data, headers){
