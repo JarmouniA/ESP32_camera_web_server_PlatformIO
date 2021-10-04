@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="client.js"></script>
+        <script>
+            src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            
+            function Connect()
+            {
+                const Url = esp32_Url;
+                fetch(`${Url}/status`)
+                .then(function (response) {
+                return response.json()
+                })
+                .then(function (state) {
+                    if (state["sensor"] === "OV3660")
+                    {
+                        window.location.assign("index_ov3660.html");
+                    } else if (state["sensor"] === "OV5640") {
+                        window.location.assign("index_ov5640.html");
+                    } else {
+                        window.location.assign("index_ov2640.html");
+                    }
+                })
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Connect" onclick="Connect()" />
+    </body>
+</html> 

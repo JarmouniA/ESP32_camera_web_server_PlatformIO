@@ -1,0 +1,7 @@
+.pio
+.vscode
+lib/esp32-camera
+components/esp32-camera
+sdkconfig.esp32cam
+sdkconfig
+sdkconfig.esp32cam
