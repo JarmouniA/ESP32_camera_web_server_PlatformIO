@@ -20,8 +20,8 @@
 #include "esp_timer.h"
 #include "esp_camera.h"
 #include "esp_log.h"
-
 #include "sdkconfig.h"
+
 
 #include "img_converters.h"
 #include "driver/ledc.h"
@@ -30,7 +30,7 @@
 #include "app_mdns.h"
 #include "app_camera.h"
 
-static const char *TAG = "camera_httpd";
+static const char *TAG = "app_httpd";
 
 #ifdef CONFIG_LED_ILLUMINATOR_ENABLED
 int led_duty = 0;

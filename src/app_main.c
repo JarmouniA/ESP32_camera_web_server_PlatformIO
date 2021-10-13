@@ -13,8 +13,6 @@
 
 static const char *TAG = "APP_Main";
 
-esp_err_t TF_init_status;
-
 void app_main()
 {
   ESP_LOGI(TAG, "Starting main application");
